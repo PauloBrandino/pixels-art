@@ -2,23 +2,51 @@ export default function Home() {
   return (
     <main className="grid grid-cols-2 min-h-screen">
       {/* Left */}
-      <div className="relative flex flex-col bg-[url(../assets/bg-stars.svg)] border-r border-white/10">
-        {/* Geralzão */}
-        <div>
+      <div className="relative flex text-zinc-50 flex-col bg-[url(../assets/bg-stars.svg)] border-r border-white/10 bg-cover px-28 py-16 overflow-hidden justify-between">
+      <div className="absolute right-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-1/2 rounded-full bg-blue-700 opacity-50 blur-full" />
+
           {/* Logo */}
-          <div>LOGO</div>
+          <div>
+            <h1 className="text-blue-800 font-extrabold text-2xl">
+              PixelDraft
+            </h1>
+          </div>
 
           {/* HERO */}
-          <div>HERO</div>
+          <div className="space-y-5">
+            {/* FRASE PRINCIPAL */}
+            <div className="max-w-[800px]">
+              <h1 className="text-8xl leading-tight font-light">DRAW</h1>
+              <h1 className="text-9xl text-blue-800 font-bold">YOUR PIXEL</h1>
+            </div>
+
+            {/* texto */}
+            <div className="max-w-[500px]">
+              <p className="text-lg leading-relaxed">
+               Spark your imagination, unleash your creativity and make your mark in the digital universe. Create unique works of art!
+              </p>
+            </div>
+
+            {/* Call to Action */}
+            <div>
+              <h1 className="inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black hover:bg-green-600">
+                Start Now {'>>'}
+              </h1>
+            </div>
+          </div>
 
           {/* FOOTER */}
-          <div>Footer</div>
-        </div>
+          <div>
+            <p>
+              created by <span className="text-lg leading-relaxed font-medium">Paulo Brandino</span> 
+            </p>
+          </div>
+        
       </div>
 
       {/* Rigth */}
       <div className="relative flex flex-col justify-center items-center bg-[url(../assets/bg-stars.svg)]">
-        <div className='absolute flex bg-zinc-800 h-[450px] w-[480px] flex-col justify-between rounded-md shadow-md'>
+        <div className='absolute flex bg-zinc-800 h-[450px] w-[480px] flex-col justify-between rounded-lg shadow-md bg-opacity-50'>
           {/* Welcome */}
           <div className="flex space-y-1 flex-col items-center text-gray-50 p-2">
             <h1 className="text-base leading-tight uppercase">
@@ -50,7 +78,7 @@ export default function Home() {
 
               {/* Login Button */}
               <div className="pl-3 w-full items-center">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+              <button className="bg-blue-800 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
         Login
       </button>
               </div>
@@ -58,7 +86,7 @@ export default function Home() {
           </div>
 
           {/* Create User */}
-          <div className="flex justify-center text-zinc-50">
+          <div className="flex justify-center text-zinc-50 pb-2">
             <p>New user?
               <a className="p-2 font-bold" href="http://" target="_blank" rel="noopener noreferrer">Create Account</a>
             </p>
